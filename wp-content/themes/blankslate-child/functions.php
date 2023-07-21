@@ -25,5 +25,18 @@ function register_footer_menu()
 }
 add_action('after_setup_theme', 'register_footer_menu');
 
+add_filter('wp_nav_menu_items', 'add_admin_link', 10, 2);
+function add_admin_link($items, $args) {
+    if ($args->theme_location == 'main-menu') {
+        if (current_user_can('administrator')) {
+            $admin_link = '<li><a title="Admin" href="'. admin_url() .'">Admin</a></li>';
+
+            $menu_parts = explode('</li>', $items, 3);
+
+            $items = $menu_parts[0] . '</li>' . $admin_link . $menu_parts[1] . '</li>' . $menu_parts[2];
+        }
+    }
+    return $items;
+}
 
 // END ENQUEUE PARENT ACTION
