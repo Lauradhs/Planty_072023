@@ -25,4 +25,5 @@ function register_footer_menu()
 }
 add_action('after_setup_theme', 'register_footer_menu');
 
+
 // END ENQUEUE PARENT ACTION
