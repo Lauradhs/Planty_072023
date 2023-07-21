@@ -11,3 +11,186 @@ Updated: 2023-07-05 12:41:02
 
 */
 
+body {
+    margin: 0px;
+}
+
+/* Header */
+
+.main-logo {
+    width: 201px;
+    height: 19px;
+    margin-left: 37px;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Syne';
+    align-items: center;
+}
+
+#menu ul {
+    list-style-type: none;
+}
+
+#menu li {
+    display: inline;
+    padding: 30px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: black;
+}
+
+#menu-item-16 {
+    background-color: #DC9F96;
+}
+
+#menu-item-16 a {
+    color: white;
+    padding: 30px 61px 30px 61px;
+}
+
+#menu-item-17 {
+    margin-right: 30px;
+}
+
+/* Footer */
+
+#footer {
+    display: flex;
+    justify-content: center;
+}
+
+#footer a {
+    text-decoration: none;
+    color: black;
+}
+
+#footer ul {
+    list-style-type: none;
+    font-family: 'Syne';
+    padding: 0px;
+}
+
+/* Accueil */
+
+#background-radius {
+    border-bottom: 8px solid #E3D9D0;
+    border-bottom-left-radius: 50% 9%;
+    border-bottom-right-radius: 50% 9%;
+}
+
+#commander {
+    border-bottom-left-radius: 50% 15%;
+    border-bottom-right-radius: 50% 15%;
+
+}
+
+
+/* Nous rencontrer */
+
+
+#rencontrer {
+    border-bottom-left-radius: 50% 40%;
+    border-bottom-right-radius: 50% 40%;
+}
+
+label {
+    font-family: 'Syne';
+}
+
+input {
+    border: transparent;
+    border-radius: 7px;
+    height: 71px;
+    margin-top: 10px;
+    width: 383px;
+}
+
+textarea {
+    border: transparent;
+    border-radius: 7px;
+    height: 237px;
+    resize: none;
+    margin-top: 10px;
+    width: 383px;
+}
+
+.elementor-widget-shortcode {
+    display: flex;
+    justify-content: center;
+}
+
+.wpcf7-submit {
+    font-family: 'Syne';
+    color: white;
+    border-radius: 5px;
+    background-color: #E0B9B4;
+    width: 198px;
+    height: 55px;
+    margin-left: 25%;
+}
+
+/* Commander */
+
+#text-color {
+    color:white;
+}
+
+.form_number {
+    width: 51px;
+    height: 56px;
+    border-radius: 9px 0px 0px 9px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+display:none;
+}
+
+.form_commande {
+    display: flex;
+    flex-direction: row;
+}
+
+.boutons_modif {
+    margin-top: 10px;
+}
+
+.plus {
+    height: 28px;
+    width: 31px;
+    border-radius: 0px 9px 0px 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid white;
+    background-color:#DC9F96;
+    color:white;
+}
+
+.moins {
+    height: 28px;
+    width: 31px;
+    height: 28px;
+    width: 31px;
+    border-radius: 0px 0px 9px 0px;
+    border: none;
+    background-color:#DC9F96;
+    color: white;
+}
+
+.ok {
+    background-color: #E0B9B4;
+    color: white;
+    border:none;
+    width: 100px;
+    height: 56px;
+    padding: 9px 0px 10px 0px;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
