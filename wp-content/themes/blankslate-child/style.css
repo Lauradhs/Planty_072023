@@ -20,7 +20,7 @@ body {
 .main-logo {
     width: 201px;
     height: 19px;
-    margin-left: 37px;
+    margin-left:15px;
 }
 
 #nav {
@@ -28,6 +28,10 @@ body {
     justify-content: space-between;
     font-family: 'Syne';
     align-items: center;
+}
+
+#menu-header {
+    padding: 0px;
 }
 
 #menu ul {
@@ -44,6 +48,10 @@ body {
     color: black;
 }
 
+#menu a:hover {
+    font-weight: bold;
+}
+
 #menu-item-16 {
     background-color: #DC9F96;
 }
@@ -55,6 +63,10 @@ body {
 
 #menu-item-17 {
     margin-right: 30px;
+}
+
+#menu-item-16:hover {
+    background-color: #C02E44;
 }
 
 /* Footer */
@@ -144,7 +156,9 @@ textarea {
     width: 51px;
     height: 56px;
     border-radius: 9px 0px 0px 9px;
+    padding-left: 23px;
 }
+
 
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
@@ -193,4 +207,152 @@ display:none;
     border-radius: 5px;
     margin-left: 10px;
     margin-top: 10px;
+}
+
+.command_form {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .column {
+    flex: 1;
+    margin-right: 100px; 
+  }
+  
+  .form_label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+.commander_button {
+    color:white;
+    background-color: #E0B9B4;
+    border-radius: 5px;
+    border:none;
+    padding: 15px 30px 15px 30px;
+    font-family: 'Syne';
+    font-size: 15px;
+    margin-top: 20px;
+    position: absolute;
+    left: 37%;
+}
+
+.commander_button:hover {
+    background-color: #C02E44;
+}
+
+.form_button {
+    display:flex;
+    flex-direction: center;
+    position:relative;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 885px) {
+
+
+#menu li {
+    display:inline;
+    padding: 5px;
+}
+
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+}
+
+#menu-item-16 {
+    background-color: #DC9F96;
+}
+
+#menu-item-16 a {
+    color: white;
+    padding: 10px 15px 10px 15px;
+}
+
+.main-logo {
+    margin-left: 10px;
+}
+
+#form-contacter {
+    width: 100%;
+}
+
+.elementor-shortcode {
+    width: 100%;
+}
+
+.form_label {
+    width: 80%;
+}
+
+}
+
+@media screen and (max-width: 1068px) {
+
+.fruit_commande {
+    .ok {
+        background-color: #E0B9B4;
+        color: white;
+        border:none;
+        width: 80px;
+        height: 56px;
+        padding: 9px 0px 10px 0px;
+        border-radius: 5px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+}
+
+.command_form {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+.commander_button {
+    left: 0%;
+}
+}
+
+
+@media screen and (max-width: 525px) {
+
+#menu li {
+        display:inline;
+        padding: 5px;
+    }
+    
+    
+#nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; 
+    }
+    
+#menu-item-16 {
+        background-color: #DC9F96;
+    }
+    
+#menu-item-16 a {
+        color: white;
+        padding: 10px 15px 10px 15px;
+    }
+    
+.main-logo {
+        padding-top: 10px;
+        margin: 0px;
+    }
+
+.form_button {
+        display:flex;
+        justify-content: flex-start;
+    }
+
+input {
+        width: 300px;
+    }
 }
