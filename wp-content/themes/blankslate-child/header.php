@@ -13,10 +13,10 @@
     <div id="wrapper" class="hfeed">
         <header id="header" role="banner">
             <div id="nav">
-            <img src="http://localhost/planty/wp-content/uploads/2023/07/Logo.png" class="main-logo">
+            <a href="<?php echo get_site_url() . '/accueil'; ?>"> <img src="http://localhost/planty/wp-content/uploads/2023/07/Logo.png" class="main-logo"></a>
             <nav id="menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
                 <?php wp_nav_menu(array('theme_location' => 'main-menu', 'link_before' => '<span itemprop="name">', 'link_after' => '</span>')); ?>
                 </div>
-            </nav>
+                </nav>
         </header>
       
