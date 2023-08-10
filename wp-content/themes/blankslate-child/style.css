@@ -28,6 +28,7 @@ body {
     justify-content: space-between;
     font-family: 'Syne';
     align-items: center;
+    height: 80px;
 }
 
 #menu-header {
@@ -40,7 +41,7 @@ body {
 
 #menu li {
     display: inline;
-    padding: 30px;
+    padding: 31px;
 }
 
 #menu a {
@@ -50,6 +51,7 @@ body {
 
 #menu a:hover {
     font-weight: bold;
+    transform: scale(1);
 }
 
 #menu-item-16 {
@@ -58,7 +60,8 @@ body {
 
 #menu-item-16 a {
     color: white;
-    padding: 30px 61px 30px 61px;
+    padding-left: 42.2px;
+    padding-right: 42.2px;
 }
 
 #menu-item-17 {
@@ -67,6 +70,7 @@ body {
 
 #menu-item-16:hover {
     background-color: #C02E44;
+    transform: scale(1);
 }
 
 /* Footer */
@@ -243,7 +247,6 @@ display:none;
 
 .form_button {
     display:flex;
-    flex-direction: center;
     position:relative;
 }
 
@@ -293,7 +296,6 @@ display:none;
 
 @media screen and (max-width: 1068px) {
 
-.fruit_commande {
     .ok {
         background-color: #E0B9B4;
         color: white;
@@ -304,7 +306,6 @@ display:none;
         border-radius: 5px;
         margin-left: 10px;
         margin-top: 10px;
-    }
 }
 
 .command_form {
@@ -353,6 +354,18 @@ display:none;
     }
 
 input {
-        width: 300px;
+        width: 250px;
     }
+
+textarea {
+    width: 300px;
+}
+
+.column {
+    margin-right: 0px;
+}
+
+#menu a {
+    font-size: 14px;
+}
 }
